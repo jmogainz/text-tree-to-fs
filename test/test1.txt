@@ -1,0 +1,37 @@
+auth-service
+├── cmd
+│   └── main.go
+├── config
+│   └── config.go
+├── internal
+│   ├── app
+│   │   └── app.go
+│   ├── controllers
+│   │   ├── auth_controller.go
+│   │   └── user_controller.go
+│   ├── middleware
+│   │   └── auth_middleware.go
+│   ├── models
+│   │   ├── user.go
+│   │   ├── refresh_token.go
+│   │   ├── sms_code.go
+│   │   └── openid_connection.go
+│   ├── repositories
+│   │   ├── user_repository.go
+│   │   ├── token_repository.go
+│   │   └── sms_repository.go
+│   ├── services
+│   │   ├── auth_service.go
+│   │   ├── openid_service.go
+│   │   ├── sms_service.go
+│   │   └── jwt_service.go
+│   └── utils
+│       ├── logger.go
+│       └── errors.go
+├── migrations
+│   └── *.sql
+├── scripts
+│   └── migrate.sh
+├── go.mod
+├── go.sum
+└── README.md
